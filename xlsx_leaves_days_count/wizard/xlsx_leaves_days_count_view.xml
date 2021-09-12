@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="generate_excel_reports_criteria_popup" model="ir.ui.view">
+        <field name="name">xlsx.leaves.days.count.form</field>
+        <field name="model">xlsx.leaves.days.count</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <form string="Criteria View">
+                <notebook>
+                    <page string="Criteria">
+                        <group>
+                            <group>
+                                <field name="hr_leave_type" widget="many2many_tags" options="{'no_open':True,'no_create':True,'no_create_edit':True}"/>
+                            </group>
+                            <group>
+                                <field name="date_from" required="1"/>
+                                <field name="date_to" required="1"/>
+                                <field name="state" required="1"/>
+                            </group>
+                        </group>
+                    </page>
+                    <page string="More .." groups="xlsx_leaves_days_count.group_generate_excel_report_manager">
+                        <group>
+                            <group>
+                                <field name="right_to_left"/>
+                                <field name="protect"/>
+                            </group>
+                            <group>
+                                <field name="cell_width"/>
+                                <field name="header_color"/>
+                                <field name="cell_color"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+
+                <footer>
+                    <button name="action_report" string="Report" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_leaves_days_count" model="ir.actions.act_window">
+        <field name="name">Leaves Days Count</field>
+        <field name="res_model">xlsx.leaves.days.count</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="leaves_days_count_action_menu"
+              action="action_leaves_days_count"
+              parent="hr_holidays.menu_hr_holidays_report"
+              groups="xlsx_leaves_days_count.group_generate_excel_report_user"
+              sequence="30"/>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xlsx_leaves_days_count_user,xlsx.leaves.days.count User,model_xlsx_leaves_days_count,group_generate_excel_report_user,1,1,1,1
