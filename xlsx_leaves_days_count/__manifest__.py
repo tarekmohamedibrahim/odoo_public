@@ -4,7 +4,8 @@
     'name' : 'Leaves Days Count xlsx Report',
     'author': 'Tarek Ibrahim',
     'version' : '1.0',
-    'summary': 'Leaves Days Count xlsx Report',
+    'summary': '''This report collects the number of days taken by each employees for a specific selected period. it ignores 
+                    taken days outside the selected period''',
     'sequence': 30,
     'description': """
     Excel Report: Leaves Days Count
@@ -15,15 +16,15 @@
         3-  Vacation Days ( as per vacation type )
         
         Days are count within the selected period only 
-        ex. suppose the report filter from 2021-09-01 to 2021-09-10 and an employee has been taken a vacation from 2021-08-25 to 2021-09-05 the report will count only 5 days for this employee
-        
+        For example, if an employee has taken a vacation
+				from 2021-08-30 to 2021-09-02, these are 4 days. In the report if you selected the period from 2021-09-01 to
+				2021-09-30, then the report will count 2 days only for this employee.
         Features:
         User can select any / all vacaton types to report
         Manager can change the Headers cells' width, color, and output cell colors
         There is a summary line in the bottom of the collected lines
         below it a 'Total' line that sums all leaves types as days count
         If the user selected only one leave type the 'Total' line won't appear
-        
     """,
     'category': 'Reports',
     'license': 'AGPL-3',
