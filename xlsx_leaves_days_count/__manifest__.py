@@ -26,12 +26,14 @@
         
     """,
     'category': 'Reports',
+    'license': 'AGPL-3',
     'website': '',
-    'images' : [],
-    'depends' : [
-        'base',
-        'hr_holidays',
-                 ],
+    'images' : [
+        'static/description/icon.png',
+        'static/description/popup-screen.png',
+        'static/description/sample-output.png',
+    ],
+    'depends' : [ 'base', 'hr_holidays', ],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
