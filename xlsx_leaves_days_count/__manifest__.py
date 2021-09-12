@@ -8,13 +8,12 @@
     'sequence': 30,
     'description': """
     Excel Report: Leaves Days Count
-   Get the defined vacations in the installation, put them as headers in the report
+    Get the defined vacations in the installation, put them as headers in the report
         add the following columns
         1-  serial ( the record # in excel sheet )
         2-  Emp. name
         3-  Vacation Days ( as per vacation type )
         
-        Note: 
         Days are count within the selected period only 
         ex. suppose the report filter from 2021-09-01 to 2021-09-10 and an employee has been taken a vacation from 2021-08-25 to 2021-09-05 the report will count only 5 days for this employee
         
