@@ -4,8 +4,7 @@
     'name' : 'Leaves Days Count xlsx Report',
     'author': 'Tarek Ibrahim',
     'version' : '1.0',
-    'summary': '''This report collects the number of days taken by each employees for a specific selected period. it ignores 
-                    taken days outside the selected period''',
+    'summary': '''Collects the number of days taken by each employees for a specific selected period. it ignores days outside this period''',
     'sequence': 30,
     'description': """
     Excel Report: Leaves Days Count
