@@ -20,7 +20,9 @@
         'views/template.xml',
     ],
     'qweb': [ ],
-    'images': ['images/main_screenshot.png'],
+    'images': [
+        'static/description/main_screenshot.png',
+    ],
     'license': 'AGPL-3',
     'installable': True,
     'application': False,
