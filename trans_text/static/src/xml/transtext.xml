@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template>
+
+    <t t-name="transtext">
+        <div class="oe_title">
+            <marquee behavior="scroll"
+                     t-att-direction="widget.direction"
+                     t-att-class="widget.bg_color"
+                     t-att-title="widget.tooltip"
+                     t-att-scrollamount="widget.speed"
+                     t-att-field="widget.field">
+                <t t-esc="widget.text"/>
+            </marquee>
+        </div>
+    </t>
+
+</template>
