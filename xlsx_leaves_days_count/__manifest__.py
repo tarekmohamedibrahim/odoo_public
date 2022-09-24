@@ -40,6 +40,9 @@
         'wizard/xlsx_leaves_days_count_view.xml',
     ],
     'demo': [ ],
+    'external_dependencies': {
+        'python' : ['xlsxwriter'],
+    },
     'installable': True,
     'application': False,
     'auto_install': False,
